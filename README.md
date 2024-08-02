@@ -1,2 +1,2 @@
 # black-css
-A utility-first css library with no build step
+A utility-first, minimal css library with no build step, written only in CSS. 
