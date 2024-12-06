@@ -1,0 +1,120 @@
+
+:root {
+    font-size: 16px;
+
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+
+    --charcoal: #2E2E2E;
+    --yellow-light: #ffffe0;
+
+    --navy-blue: #000080;
+    --pale-blue: #e6f0fa;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 1rem;
+}
+
+ol, ul, menu {
+    list-style: none;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+/* Text size */
+.txs { font-size: 1rem; line-height: 1.5rem; }
+.ts { font-size: 1rem; line-height: 1.5rem;}
+.tm  { font-size: 1rem; line-height: 1.5rem; }
+.tl  { font-size: 1.125rem; line-height: 1.75rem; }
+.txl { font-size: 1.25rem; line-height: 1.75rem; }
+.t2xl { font-size: 1rem; line-height: 1.5rem; }
+.t3xl { font-size: 1rem; line-height: 1.5rem; }
+.t4xl { font-size: 1rem; line-height: 1.5rem; }
+.t5xl { font-size: 1rem; line-height: 1.5rem; }
+.t6xl { font-size: 1rem; line-height: 1.5rem; }
+.t7xl { font-size: 1rem; line-height: 1.5rem; }
+.t8xl { font-size: 1rem; line-height: 1.5rem; }
+.t9xl { font-size: 1rem; line-height: 1.5rem; }
+
+
+/* Padding */
+
+.p4 { padding: 1rem; }
+.p6 { padding: 1.5rem; }
+.p8 { padding: 2rem; }
+
+
+/* Lists */
+
+:is(ul, ol, menu).bullet {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+:is(ul, ol, menu).number {
+    list-style-type: decimal;
+    padding-left: 2rem;
+}
+
+/* Margin */
+
+@media (min-width: 768px) {
+    .m\:p4 { padding: 1rem; }
+    .m\:p6 { padding: 1.5rem; }
+    .m\:p8 { padding: 2rem; }
+
+    .m\:tl { font-size: 1.125rem; line-height: 1.75rem; }
+    .m\:txl { font-size: 1.25rem; line-height: 1.75rem; }
+}
+
+@media (min-width: 1024px) {
+    .l\:p4 { padding: 1rem; }
+    .l\:p6 { padding: 1.5rem; }
+    .l\:p8 { padding: 2rem; }
+
+    .l\:txl { font-size: 1.25rem; line-height: 1.75rem; }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #eee;
+    }
+}
